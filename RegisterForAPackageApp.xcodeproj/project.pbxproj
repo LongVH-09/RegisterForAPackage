@@ -17,6 +17,9 @@
 		B031917D2ABA9EB0003E8040 /* RegisterForAPackageAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B031917C2ABA9EB0003E8040 /* RegisterForAPackageAppTests.swift */; };
 		B03191872ABA9EB0003E8040 /* RegisterForAPackageAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03191862ABA9EB0003E8040 /* RegisterForAPackageAppUITests.swift */; };
 		B03191892ABA9EB0003E8040 /* RegisterForAPackageAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03191882ABA9EB0003E8040 /* RegisterForAPackageAppUITestsLaunchTests.swift */; };
+		B0EF11DF2ABACB6F0043AB53 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EF11DE2ABACB6F0043AB53 /* GradientView.swift */; };
+		B0EF11E32ABACC200043AB53 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EF11E22ABACC200043AB53 /* Extension.swift */; };
+		B0EF11E72ABAE60C0043AB53 /* Plus_Jakarta_Sans in Resources */ = {isa = PBXBuildFile; fileRef = B0EF11E62ABAE60C0043AB53 /* Plus_Jakarta_Sans */; };
 		CB132835663F30033BC2F782 /* Pods_RegisterForAPackageApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC9526E4B68AAECA7AE64F7 /* Pods_RegisterForAPackageApp.framework */; };
 		EB2F11AA777F21F698B157D8 /* Pods_RegisterForAPackageApp_RegisterForAPackageAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88B5015174E70B723915F16C /* Pods_RegisterForAPackageApp_RegisterForAPackageAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -60,6 +63,9 @@
 		B03191822ABA9EB0003E8040 /* RegisterForAPackageAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegisterForAPackageAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B03191862ABA9EB0003E8040 /* RegisterForAPackageAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterForAPackageAppUITests.swift; sourceTree = "<group>"; };
 		B03191882ABA9EB0003E8040 /* RegisterForAPackageAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterForAPackageAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B0EF11DE2ABACB6F0043AB53 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		B0EF11E22ABACC200043AB53 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		B0EF11E62ABAE60C0043AB53 /* Plus_Jakarta_Sans */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Plus_Jakarta_Sans; sourceTree = "<group>"; };
 		B5CC30BD6A540B94A02A7668 /* Pods-RegisterForAPackageApp-RegisterForAPackageAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegisterForAPackageApp-RegisterForAPackageAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-RegisterForAPackageApp-RegisterForAPackageAppUITests/Pods-RegisterForAPackageApp-RegisterForAPackageAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,10 +135,10 @@
 				B03191652ABA9EAD003E8040 /* AppDelegate.swift */,
 				B03191672ABA9EAD003E8040 /* SceneDelegate.swift */,
 				B03191692ABA9EAD003E8040 /* ViewController.swift */,
-				B031916B2ABA9EAD003E8040 /* Main.storyboard */,
-				B031916E2ABA9EAF003E8040 /* Assets.xcassets */,
-				B03191702ABA9EAF003E8040 /* LaunchScreen.storyboard */,
-				B03191732ABA9EAF003E8040 /* Info.plist */,
+				B0EF11DD2ABACB540043AB53 /* Gradient */,
+				B0EF11E12ABACC040043AB53 /* Extension */,
+				B0EF11DC2ABAC9FB0043AB53 /* Resources */,
+				B0EF11E42ABAE5940043AB53 /* Fonts */,
 			);
 			path = RegisterForAPackageApp;
 			sourceTree = "<group>";
@@ -154,6 +160,49 @@
 			path = RegisterForAPackageAppUITests;
 			sourceTree = "<group>";
 		};
+		B0EF11DC2ABAC9FB0043AB53 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B031916B2ABA9EAD003E8040 /* Main.storyboard */,
+				B031916E2ABA9EAF003E8040 /* Assets.xcassets */,
+				B03191702ABA9EAF003E8040 /* LaunchScreen.storyboard */,
+				B03191732ABA9EAF003E8040 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B0EF11DD2ABACB540043AB53 /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				B0EF11DE2ABACB6F0043AB53 /* GradientView.swift */,
+			);
+			path = Gradient;
+			sourceTree = "<group>";
+		};
+		B0EF11E12ABACC040043AB53 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B0EF11E22ABACC200043AB53 /* Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B0EF11E42ABAE5940043AB53 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B0EF11E52ABAE5BC0043AB53 /* Plus_JaKarTa_Sans */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B0EF11E52ABAE5BC0043AB53 /* Plus_JaKarTa_Sans */ = {
+			isa = PBXGroup;
+			children = (
+				B0EF11E62ABAE60C0043AB53 /* Plus_Jakarta_Sans */,
+			);
+			path = Plus_JaKarTa_Sans;
+			sourceTree = "<group>";
+		};
 		BBF541DD8B0B144BB44F7ABB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +213,6 @@
 				2D2C2FBDD7A8121F4EA6AE77 /* Pods-RegisterForAPackageAppTests.debug.xcconfig */,
 				AE92D3E6D9447FE0B7B18A36 /* Pods-RegisterForAPackageAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -277,6 +325,7 @@
 			files = (
 				B03191722ABA9EAF003E8040 /* LaunchScreen.storyboard in Resources */,
 				B031916F2ABA9EAF003E8040 /* Assets.xcassets in Resources */,
+				B0EF11E72ABAE60C0043AB53 /* Plus_Jakarta_Sans in Resources */,
 				B031916D2ABA9EAD003E8040 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,9 +420,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0EF11E32ABACC200043AB53 /* Extension.swift in Sources */,
 				B031916A2ABA9EAD003E8040 /* ViewController.swift in Sources */,
 				B03191662ABA9EAD003E8040 /* AppDelegate.swift in Sources */,
 				B03191682ABA9EAD003E8040 /* SceneDelegate.swift in Sources */,
+				B0EF11DF2ABACB6F0043AB53 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,7 +603,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RegisterForAPackageApp/Info.plist;
+				INFOPLIST_FILE = RegisterForAPackageApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -580,7 +631,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RegisterForAPackageApp/Info.plist;
+				INFOPLIST_FILE = RegisterForAPackageApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
