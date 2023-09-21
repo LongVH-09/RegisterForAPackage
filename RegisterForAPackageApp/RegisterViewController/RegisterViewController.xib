@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PlusJakartaSans-Bold.ttf">
+            <string>PlusJakartaSans-Bold</string>
+        </array>
+        <array key="PlusJakartaSans-Medium.ttf">
+            <string>PlusJakartaSans-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="RegisterForAPackageApp" customModuleProvider="target">
+            <connections>
+                <outlet property="btnNext" destination="bzq-Oc-oLZ" id="ymB-rt-Emg"/>
+                <outlet property="txtPhoneNumber" destination="FJV-Do-5Ms" id="usr-aY-77d"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9pK-OW-p70">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo 48x48" translatesAutoresizingMaskIntoConstraints="NO" id="OKP-77-Sek">
+                            <rect key="frame" x="32" y="63" width="48" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="48" id="NjE-4S-Qwc"/>
+                                <constraint firstAttribute="width" secondItem="OKP-77-Sek" secondAttribute="height" id="vJC-6P-bKV"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đăng ký tài khoản" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ag-Xp-InZ">
+                            <rect key="frame" x="28" y="126.99999999999999" width="337" height="30.333333333333329"/>
+                            <fontDescription key="fontDescription" name="PlusJakartaSans-Bold" family="Plus Jakarta Sans" pointSize="24"/>
+                            <color key="textColor" red="0.10196078431372549" green="0.12549019607843137" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhập số điện thoại là thuê bao nhà mạng MobiFone để đăng ký gói cước mFamily" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kfo-df-nRU">
+                            <rect key="frame" x="28" y="165.33333333333334" width="337" height="35.333333333333343"/>
+                            <fontDescription key="fontDescription" name="PlusJakartaSans-Medium" family="Plus Jakarta Sans" pointSize="14"/>
+                            <color key="textColor" red="0.44313725490196076" green="0.50196078431372548" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số điện thoại" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRp-Qi-VI1">
+                            <rect key="frame" x="28" y="216.66666666666666" width="88" height="17.666666666666657"/>
+                            <fontDescription key="fontDescription" name="PlusJakartaSans-Bold" family="Plus Jakarta Sans" pointSize="14"/>
+                            <color key="textColor" red="0.10196078431372549" green="0.12549019607843137" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StarImg" translatesAutoresizingMaskIntoConstraints="NO" id="UPF-Kj-Ugd">
+                            <rect key="frame" x="120" y="219.66666666666666" width="8" height="6"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="8" id="scJ-MF-hYq"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nhập số điện thoại" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FJV-Do-5Ms" customClass="CustomTextField" customModule="RegisterForAPackageApp" customModuleProvider="target">
+                            <rect key="frame" x="28" y="242.33333333333337" width="337" height="56"/>
+                            <color key="backgroundColor" red="0.97647058823529409" green="0.9882352941176471" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="56" id="z8J-5Y-0iP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call" translatesAutoresizingMaskIntoConstraints="NO" id="MNS-5e-1pe">
+                            <rect key="frame" x="44" y="258.33333333333331" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="IyX-zF-bxx"/>
+                                <constraint firstAttribute="width" secondItem="MNS-5e-1pe" secondAttribute="height" id="pZc-vq-Uza"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzq-Oc-oLZ">
+                            <rect key="frame" x="28" y="746" width="337" height="52"/>
+                            <color key="backgroundColor" red="0.92941176470588238" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="7ub-mi-gMm"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Tiếp tục" subtitle=""/>
+                            <connections>
+                                <action selector="process:" destination="-1" eventType="touchUpInside" id="ogY-xo-uzN"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="OKP-77-Sek" firstAttribute="leading" secondItem="9pK-OW-p70" secondAttribute="leading" constant="32" id="4Jv-dJ-6g2"/>
+                        <constraint firstItem="FJV-Do-5Ms" firstAttribute="leading" secondItem="9pK-OW-p70" secondAttribute="leading" constant="28" id="ApI-rV-AbO"/>
+                        <constraint firstItem="Kfo-df-nRU" firstAttribute="top" secondItem="8Ag-Xp-InZ" secondAttribute="bottom" constant="8" id="DxB-h1-Pgi"/>
+                        <constraint firstItem="8Ag-Xp-InZ" firstAttribute="leading" secondItem="9pK-OW-p70" secondAttribute="leading" constant="28" id="EAn-8Y-Xhh"/>
+                        <constraint firstItem="bzq-Oc-oLZ" firstAttribute="leading" secondItem="9pK-OW-p70" secondAttribute="leading" constant="28" id="IDV-FW-VE2"/>
+                        <constraint firstAttribute="trailing" secondItem="Kfo-df-nRU" secondAttribute="trailing" constant="28" id="PcX-ol-PfY"/>
+                        <constraint firstItem="Kfo-df-nRU" firstAttribute="leading" secondItem="9pK-OW-p70" secondAttribute="leading" constant="28" id="Pjj-Ra-nRI"/>
+                        <constraint firstItem="UPF-Kj-Ugd" firstAttribute="top" secondItem="IRp-Qi-VI1" secondAttribute="top" constant="3" id="SwF-3O-Xuj"/>
+                        <constraint firstItem="MNS-5e-1pe" firstAttribute="centerY" secondItem="FJV-Do-5Ms" secondAttribute="centerY" id="V13-2f-TCf"/>
+                        <constraint firstAttribute="trailing" secondItem="bzq-Oc-oLZ" secondAttribute="trailing" constant="28" id="YIS-Ya-Tqe"/>
+                        <constraint firstItem="8Ag-Xp-InZ" firstAttribute="top" secondItem="OKP-77-Sek" secondAttribute="bottom" constant="16" id="YnD-eG-d5b"/>
+                        <constraint firstItem="FJV-Do-5Ms" firstAttribute="top" secondItem="IRp-Qi-VI1" secondAttribute="bottom" constant="8" id="brh-Gz-Shd"/>
+                        <constraint firstItem="IRp-Qi-VI1" firstAttribute="top" secondItem="Kfo-df-nRU" secondAttribute="bottom" constant="16" id="gYu-Kn-mgA"/>
+                        <constraint firstItem="MNS-5e-1pe" firstAttribute="leading" secondItem="FJV-Do-5Ms" secondAttribute="leading" constant="16" id="jxh-hS-tJP"/>
+                        <constraint firstItem="UPF-Kj-Ugd" firstAttribute="leading" secondItem="IRp-Qi-VI1" secondAttribute="trailing" constant="4" id="oDx-GQ-hPm"/>
+                        <constraint firstItem="IRp-Qi-VI1" firstAttribute="leading" secondItem="9pK-OW-p70" secondAttribute="leading" constant="28" id="oRg-po-I2G"/>
+                        <constraint firstAttribute="trailing" secondItem="8Ag-Xp-InZ" secondAttribute="trailing" constant="28" id="v6k-fx-Sof"/>
+                        <constraint firstAttribute="trailing" secondItem="FJV-Do-5Ms" secondAttribute="trailing" constant="28" id="yV0-lM-oiY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="bzq-Oc-oLZ" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="-20" id="7se-eE-ryC"/>
+                <constraint firstItem="OKP-77-Sek" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="4" id="J0k-eU-OcR"/>
+                <constraint firstItem="9pK-OW-p70" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Lfs-dI-KhX"/>
+                <constraint firstItem="9pK-OW-p70" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="XRT-Wd-LVz"/>
+                <constraint firstItem="9pK-OW-p70" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="a0n-HX-5uI"/>
+                <constraint firstAttribute="bottom" secondItem="9pK-OW-p70" secondAttribute="bottom" id="xR8-1I-j5U"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="bzq-Oc-oLZ">
+            <size key="intrinsicContentSize" width="86" height="34.333333333333336"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Logo 48x48" width="48" height="48"/>
+        <image name="StarImg" width="6" height="6"/>
+        <image name="call" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -20,6 +20,15 @@
 		B0EF11DF2ABACB6F0043AB53 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EF11DE2ABACB6F0043AB53 /* GradientView.swift */; };
 		B0EF11E32ABACC200043AB53 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EF11E22ABACC200043AB53 /* Extension.swift */; };
 		B0EF11E72ABAE60C0043AB53 /* Plus_Jakarta_Sans in Resources */ = {isa = PBXBuildFile; fileRef = B0EF11E62ABAE60C0043AB53 /* Plus_Jakarta_Sans */; };
+		B0F600C12ABBD58400961542 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F600C02ABBD58400961542 /* CustomTextField.swift */; };
+		B0F600C52ABBDA7A00961542 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F600C32ABBDA7A00961542 /* RegisterViewController.swift */; };
+		B0F600C62ABBDA7A00961542 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F600C42ABBDA7A00961542 /* RegisterViewController.xib */; };
+		B0F600C82ABBF0C300961542 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F600C72ABBF0C300961542 /* CustomButton.swift */; };
+		B0F600CA2ABBFF8A00961542 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F600C92ABBFF8A00961542 /* Validators.swift */; };
+		B0F600D22ABC38F900961542 /* RegisterPackageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F600D02ABC38F900961542 /* RegisterPackageViewController.swift */; };
+		B0F600D32ABC38F900961542 /* RegisterPackageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F600D12ABC38F900961542 /* RegisterPackageViewController.xib */; };
+		B0F600D72ABC40A300961542 /* RegisterPackageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F600D52ABC40A300961542 /* RegisterPackageTableViewCell.swift */; };
+		B0F600D82ABC40A300961542 /* RegisterPackageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F600D62ABC40A300961542 /* RegisterPackageTableViewCell.xib */; };
 		CB132835663F30033BC2F782 /* Pods_RegisterForAPackageApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC9526E4B68AAECA7AE64F7 /* Pods_RegisterForAPackageApp.framework */; };
 		EB2F11AA777F21F698B157D8 /* Pods_RegisterForAPackageApp_RegisterForAPackageAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88B5015174E70B723915F16C /* Pods_RegisterForAPackageApp_RegisterForAPackageAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +75,15 @@
 		B0EF11DE2ABACB6F0043AB53 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		B0EF11E22ABACC200043AB53 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		B0EF11E62ABAE60C0043AB53 /* Plus_Jakarta_Sans */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Plus_Jakarta_Sans; sourceTree = "<group>"; };
+		B0F600C02ABBD58400961542 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		B0F600C32ABBDA7A00961542 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		B0F600C42ABBDA7A00961542 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		B0F600C72ABBF0C300961542 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		B0F600C92ABBFF8A00961542 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		B0F600D02ABC38F900961542 /* RegisterPackageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPackageViewController.swift; sourceTree = "<group>"; };
+		B0F600D12ABC38F900961542 /* RegisterPackageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterPackageViewController.xib; sourceTree = "<group>"; };
+		B0F600D52ABC40A300961542 /* RegisterPackageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPackageTableViewCell.swift; sourceTree = "<group>"; };
+		B0F600D62ABC40A300961542 /* RegisterPackageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterPackageTableViewCell.xib; sourceTree = "<group>"; };
 		B5CC30BD6A540B94A02A7668 /* Pods-RegisterForAPackageApp-RegisterForAPackageAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegisterForAPackageApp-RegisterForAPackageAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-RegisterForAPackageApp-RegisterForAPackageAppUITests/Pods-RegisterForAPackageApp-RegisterForAPackageAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,8 +153,11 @@
 				B03191652ABA9EAD003E8040 /* AppDelegate.swift */,
 				B03191672ABA9EAD003E8040 /* SceneDelegate.swift */,
 				B03191692ABA9EAD003E8040 /* ViewController.swift */,
+				B0F600C22ABBDA5C00961542 /* RegisterViewController */,
+				B0F600CB2ABC35BF00961542 /* RegisterPackageViewController */,
 				B0EF11DD2ABACB540043AB53 /* Gradient */,
 				B0EF11E12ABACC040043AB53 /* Extension */,
+				B0F600BF2ABBD55200961542 /* helpers */,
 				B0EF11DC2ABAC9FB0043AB53 /* Resources */,
 				B0EF11E42ABAE5940043AB53 /* Fonts */,
 			);
@@ -201,6 +222,44 @@
 				B0EF11E62ABAE60C0043AB53 /* Plus_Jakarta_Sans */,
 			);
 			path = Plus_JaKarTa_Sans;
+			sourceTree = "<group>";
+		};
+		B0F600BF2ABBD55200961542 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B0F600C02ABBD58400961542 /* CustomTextField.swift */,
+				B0F600C72ABBF0C300961542 /* CustomButton.swift */,
+				B0F600C92ABBFF8A00961542 /* Validators.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		B0F600C22ABBDA5C00961542 /* RegisterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B0F600C32ABBDA7A00961542 /* RegisterViewController.swift */,
+				B0F600C42ABBDA7A00961542 /* RegisterViewController.xib */,
+			);
+			path = RegisterViewController;
+			sourceTree = "<group>";
+		};
+		B0F600CB2ABC35BF00961542 /* RegisterPackageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B0F600D02ABC38F900961542 /* RegisterPackageViewController.swift */,
+				B0F600D12ABC38F900961542 /* RegisterPackageViewController.xib */,
+				B0F600D42ABC404A00961542 /* RegisterPackageTableViewCell */,
+			);
+			path = RegisterPackageViewController;
+			sourceTree = "<group>";
+		};
+		B0F600D42ABC404A00961542 /* RegisterPackageTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B0F600D52ABC40A300961542 /* RegisterPackageTableViewCell.swift */,
+				B0F600D62ABC40A300961542 /* RegisterPackageTableViewCell.xib */,
+			);
+			path = RegisterPackageTableViewCell;
 			sourceTree = "<group>";
 		};
 		BBF541DD8B0B144BB44F7ABB /* Pods */ = {
@@ -323,7 +382,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F600D32ABC38F900961542 /* RegisterPackageViewController.xib in Resources */,
 				B03191722ABA9EAF003E8040 /* LaunchScreen.storyboard in Resources */,
+				B0F600D82ABC40A300961542 /* RegisterPackageTableViewCell.xib in Resources */,
+				B0F600C62ABBDA7A00961542 /* RegisterViewController.xib in Resources */,
 				B031916F2ABA9EAF003E8040 /* Assets.xcassets in Resources */,
 				B0EF11E72ABAE60C0043AB53 /* Plus_Jakarta_Sans in Resources */,
 				B031916D2ABA9EAD003E8040 /* Main.storyboard in Resources */,
@@ -422,9 +484,15 @@
 			files = (
 				B0EF11E32ABACC200043AB53 /* Extension.swift in Sources */,
 				B031916A2ABA9EAD003E8040 /* ViewController.swift in Sources */,
+				B0F600D72ABC40A300961542 /* RegisterPackageTableViewCell.swift in Sources */,
+				B0F600D22ABC38F900961542 /* RegisterPackageViewController.swift in Sources */,
+				B0F600C52ABBDA7A00961542 /* RegisterViewController.swift in Sources */,
+				B0F600C12ABBD58400961542 /* CustomTextField.swift in Sources */,
+				B0F600C82ABBF0C300961542 /* CustomButton.swift in Sources */,
 				B03191662ABA9EAD003E8040 /* AppDelegate.swift in Sources */,
 				B03191682ABA9EAD003E8040 /* SceneDelegate.swift in Sources */,
 				B0EF11DF2ABACB6F0043AB53 /* GradientView.swift in Sources */,
+				B0F600CA2ABBFF8A00961542 /* Validators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,10 +14,8 @@
         <array key="PlusJakartaSans-Medium.ttf">
             <string>PlusJakartaSans-Medium</string>
         </array>
-        <array key="PlusJakartaSans-Regular.ttf">
-            <string>PlusJakartaSans-Regular</string>
-        </array>
         <array key="PlusJakartaSans-VariableFont_wght.ttf">
+            <string>PlusJakartaSans-Regular</string>
             <string>PlusJakartaSansRoman-Bold</string>
         </array>
     </customFonts>
@@ -65,13 +63,13 @@ số điện thoại 👋</string>
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StarImg" translatesAutoresizingMaskIntoConstraints="NO" id="HsM-Up-i33">
-                                        <rect key="frame" x="120" y="281.33333333333331" width="8" height="17.666666666666686"/>
+                                        <rect key="frame" x="120" y="284.33333333333331" width="8" height="6"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="8" id="jzR-kb-4ZR"/>
                                         </constraints>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nhập số điện thoại" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FuP-68-UK9">
-                                        <rect key="frame" x="28" y="307" width="337" height="56"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nhập số điện thoại" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FuP-68-UK9" customClass="CustomTextField" customModule="RegisterForAPackageApp" customModuleProvider="target">
+                                        <rect key="frame" x="28" y="298.33333333333331" width="337" height="56"/>
                                         <color key="backgroundColor" red="0.97647058823529409" green="0.9882352941176471" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="OXt-85-2VM"/>
@@ -80,27 +78,27 @@ số điện thoại 👋</string>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call" translatesAutoresizingMaskIntoConstraints="NO" id="U9c-PX-E0E">
-                                        <rect key="frame" x="44" y="323" width="24" height="24"/>
+                                        <rect key="frame" x="44" y="314.33333333333331" width="24" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="24" id="w1u-0Z-mlj"/>
                                             <constraint firstAttribute="width" secondItem="U9c-PX-E0E" secondAttribute="height" id="zuz-51-lAb"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mật khẩu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBp-kl-ZNP">
-                                        <rect key="frame" x="27.999999999999996" y="379" width="61.666666666666657" height="17.666666666666686"/>
+                                        <rect key="frame" x="27.999999999999996" y="370.33333333333331" width="61.666666666666657" height="17.666666666666686"/>
                                         <fontDescription key="fontDescription" name="PlusJakartaSans-Bold" family="Plus Jakarta Sans" pointSize="14"/>
                                         <color key="textColor" red="0.10196078431372549" green="0.12549019607843137" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StarImg" translatesAutoresizingMaskIntoConstraints="NO" id="wPn-nD-2gH">
-                                        <rect key="frame" x="93.666666666666671" y="379" width="8" height="17.666666666666686"/>
+                                        <rect key="frame" x="93.666666666666671" y="373.33333333333331" width="8" height="6"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="8" id="ohS-BK-OPp"/>
                                         </constraints>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nhập mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zEm-S5-tWp">
-                                        <rect key="frame" x="28" y="404.66666666666669" width="337" height="56"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nhập mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zEm-S5-tWp" customClass="CustomTextField" customModule="RegisterForAPackageApp" customModuleProvider="target">
+                                        <rect key="frame" x="28" y="396" width="337" height="56"/>
                                         <color key="backgroundColor" red="0.97647058823529409" green="0.9882352941176471" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="rgD-9S-7Tn"/>
@@ -109,14 +107,14 @@ số điện thoại 👋</string>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="RZ0-Jc-L6E">
-                                        <rect key="frame" x="44" y="420.66666666666669" width="24" height="24"/>
+                                        <rect key="frame" x="44" y="412" width="24" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="RZ0-Jc-L6E" secondAttribute="height" id="XrQ-EI-Gdo"/>
                                             <constraint firstAttribute="height" constant="24" id="uqg-iw-NO0"/>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye" translatesAutoresizingMaskIntoConstraints="NO" id="sbE-Ec-k58">
-                                        <rect key="frame" x="325" y="420.66666666666669" width="24" height="24"/>
+                                        <rect key="frame" x="325" y="412" width="24" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="sbE-Ec-k58" secondAttribute="height" id="8VZ-od-oZA"/>
                                             <constraint firstAttribute="width" constant="24" id="gir-bI-gpF"/>
@@ -147,7 +145,7 @@ số điện thoại 👋</string>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gi0-nd-RQf">
                                                 <rect key="frame" x="0.0" y="0.0" width="273" height="52"/>
-                                                <color key="backgroundColor" red="0.23529411764705882" green="0.58431372549019611" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.25482177734375" green="0.48382760428048516" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="52" id="YgW-hd-yJ1"/>
                                                     <constraint firstAttribute="width" constant="273" id="tjY-Tm-lpr"/>
@@ -156,6 +154,9 @@ số điện thoại 👋</string>
                                                 <buttonConfiguration key="configuration" style="plain" title="Đăng nhập">
                                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="btnLoginAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W83-Qf-9gN"/>
+                                                </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Larger" translatesAutoresizingMaskIntoConstraints="NO" id="K9f-Ho-aSO">
                                                 <rect key="frame" x="285" y="0.0" width="52" height="52"/>
@@ -167,7 +168,7 @@ số điện thoại 👋</string>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrC-93-feh">
-                                        <rect key="frame" x="262" y="467.66666666666669" width="113" height="28"/>
+                                        <rect key="frame" x="262" y="459" width="113" height="28"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Quên mật khẩu?" subtitle="">
                                             <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
@@ -184,7 +185,6 @@ số điện thoại 👋</string>
                                     <constraint firstItem="sbE-Ec-k58" firstAttribute="trailing" secondItem="zEm-S5-tWp" secondAttribute="trailing" constant="-16" id="Af9-Cg-hjm"/>
                                     <constraint firstItem="vGQ-fD-wnS" firstAttribute="top" secondItem="QOY-FQ-25E" secondAttribute="bottom" constant="8" id="CBh-9b-XrU"/>
                                     <constraint firstItem="U9c-PX-E0E" firstAttribute="centerY" secondItem="FuP-68-UK9" secondAttribute="centerY" id="D5s-i0-dsQ"/>
-                                    <constraint firstItem="HsM-Up-i33" firstAttribute="bottom" secondItem="8AL-nJ-0dK" secondAttribute="bottom" id="E6O-5G-oyg"/>
                                     <constraint firstItem="8AL-nJ-0dK" firstAttribute="top" secondItem="vGQ-fD-wnS" secondAttribute="bottom" constant="24" id="EEO-UB-7p0"/>
                                     <constraint firstAttribute="trailing" secondItem="hrC-93-feh" secondAttribute="trailing" constant="18" id="GfI-AM-qX4"/>
                                     <constraint firstAttribute="trailing" secondItem="QHM-7e-deL" secondAttribute="trailing" constant="28" id="Kwe-Gu-Et5"/>
@@ -201,14 +201,13 @@ số điện thoại 👋</string>
                                     <constraint firstItem="tvZ-Sb-Aqu" firstAttribute="top" secondItem="QHM-7e-deL" secondAttribute="bottom" constant="4" id="gFw-yo-vPh"/>
                                     <constraint firstItem="QHM-7e-deL" firstAttribute="leading" secondItem="Pxs-Jd-lhG" secondAttribute="leading" constant="28" id="gGo-SH-n07"/>
                                     <constraint firstItem="Lpq-Xp-Kxv" firstAttribute="leading" secondItem="Pxs-Jd-lhG" secondAttribute="leading" constant="28" id="gXN-mQ-mLH"/>
-                                    <constraint firstItem="HsM-Up-i33" firstAttribute="top" secondItem="8AL-nJ-0dK" secondAttribute="top" id="hSO-Ga-1br"/>
+                                    <constraint firstItem="HsM-Up-i33" firstAttribute="top" secondItem="8AL-nJ-0dK" secondAttribute="top" constant="3" id="hSO-Ga-1br"/>
                                     <constraint firstAttribute="trailing" secondItem="FuP-68-UK9" secondAttribute="trailing" constant="28" id="hTs-VJ-PLD"/>
                                     <constraint firstItem="8AL-nJ-0dK" firstAttribute="leading" secondItem="Pxs-Jd-lhG" secondAttribute="leading" constant="28" id="izn-vU-jFy"/>
-                                    <constraint firstItem="wPn-nD-2gH" firstAttribute="bottom" secondItem="KBp-kl-ZNP" secondAttribute="bottom" id="k6f-gv-POM"/>
                                     <constraint firstAttribute="trailing" secondItem="QOY-FQ-25E" secondAttribute="trailing" constant="28" id="kDu-tf-tji"/>
                                     <constraint firstItem="HsM-Up-i33" firstAttribute="leading" secondItem="8AL-nJ-0dK" secondAttribute="trailing" constant="4" id="nQB-6E-drs"/>
                                     <constraint firstAttribute="trailing" secondItem="vGQ-fD-wnS" secondAttribute="trailing" constant="28" id="oi9-Ko-9qc"/>
-                                    <constraint firstItem="wPn-nD-2gH" firstAttribute="top" secondItem="KBp-kl-ZNP" secondAttribute="top" id="p7n-Ul-HHs"/>
+                                    <constraint firstItem="wPn-nD-2gH" firstAttribute="top" secondItem="KBp-kl-ZNP" secondAttribute="top" constant="3" id="p7n-Ul-HHs"/>
                                     <constraint firstItem="QOY-FQ-25E" firstAttribute="top" secondItem="Lpq-Xp-Kxv" secondAttribute="bottom" constant="16" id="tO3-1v-Ncs"/>
                                     <constraint firstItem="KBp-kl-ZNP" firstAttribute="top" secondItem="FuP-68-UK9" secondAttribute="bottom" constant="16" id="uKM-8t-83M"/>
                                     <constraint firstItem="sbE-Ec-k58" firstAttribute="centerY" secondItem="zEm-S5-tWp" secondAttribute="centerY" id="xHP-tN-NpS"/>

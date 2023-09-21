@@ -57,3 +57,41 @@ extension UIColor {
         self.init(red: r, green: g, blue: b, alpha: a)
     }
 }
+extension UIViewController{
+    func setBackButton() {
+        let button = UIButton(frame: CGRect.init(x: -2, y: 0, width: 24, height: 24))
+        button.setImage(UIImage(named: "back_icon"), for: .normal)
+        button.setTitle(nil, for: .normal)
+        button.addTarget(self, action:  #selector(goBack), for: .touchUpInside)
+        let view = UIView(frame: CGRect(origin: .zero, size: CGSize(width: 24, height: 24)))
+        view.clipsToBounds = false
+        view.addSubview(button)
+        let item = UIBarButtonItem.init(customView: view)
+        self.navigationItem.leftBarButtonItem = item
+    }
+    @objc func goBack() {
+        if let index = navigationController?.viewControllers.firstIndex(of: self), index > 0 {
+            self.navigationController?.popViewController(animated: true)
+        } else if self.presentingViewController != nil{
+            self.dismiss(animated: true, completion: nil)
+        } else if ((self.navigationController?.presentingViewController) != nil){
+            self.navigationController?.dismiss(animated: true, completion: nil)
+        } else {
+            self.navigationController?.popViewController(animated: false)
+        }
+    }
+}
+extension UITableViewCell {
+    static var reuseIdentifier: String {
+        return String(describing: self)
+    }
+}
+extension UITableView {
+    func registerCell(type: UITableViewCell.Type, identifier: String? = nil) {
+        let cellId = String(describing: type)
+        register(UINib(nibName: cellId, bundle: nil), forCellReuseIdentifier: identifier ?? cellId)
+    }
+    func dequeueCell<T: UITableViewCell>(withType type: UITableViewCell.Type) -> T? {
+        return dequeueReusableCell(withIdentifier: type.reuseIdentifier) as? T
+    }
+}
