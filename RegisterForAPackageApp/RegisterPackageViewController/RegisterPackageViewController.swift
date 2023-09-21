@@ -12,6 +12,9 @@ class RegisterPackageViewController: UIViewController {
 
     @IBOutlet weak var registerTableView: UITableView!
     
+    @IBOutlet var btnCollection: [UIButton]!
+    
+    
     @IBOutlet weak var popupView: UIView!
     
     override func viewDidLoad() {
@@ -35,6 +38,10 @@ class RegisterPackageViewController: UIViewController {
         view.addSubview(button)
         let item = UIBarButtonItem.init(customView: view)
         self.navigationItem.rightBarButtonItem = item
+        for item in btnCollection {
+            item.titleLabel?.textColor = .init(hex: "A0AEC0")
+        }
+
     }
     
     @objc func openPopup() {
