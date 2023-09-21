@@ -58,17 +58,19 @@ extension UIColor {
     }
 }
 extension UIViewController{
+    
     func setBackButton() {
-        let button = UIButton(frame: CGRect.init(x: -2, y: 0, width: 24, height: 24))
+        let button = UIButton(frame: CGRect.init(x: 20, y: 0, width: 30, height: 30))
         button.setImage(UIImage(named: "back_icon"), for: .normal)
         button.setTitle(nil, for: .normal)
         button.addTarget(self, action:  #selector(goBack), for: .touchUpInside)
-        let view = UIView(frame: CGRect(origin: .zero, size: CGSize(width: 24, height: 24)))
+        let view = UIView(frame: CGRect(origin: .zero, size: CGSize(width: 30, height: 30)))
         view.clipsToBounds = false
         view.addSubview(button)
         let item = UIBarButtonItem.init(customView: view)
         self.navigationItem.leftBarButtonItem = item
     }
+    
     @objc func goBack() {
         if let index = navigationController?.viewControllers.firstIndex(of: self), index > 0 {
             self.navigationController?.popViewController(animated: true)

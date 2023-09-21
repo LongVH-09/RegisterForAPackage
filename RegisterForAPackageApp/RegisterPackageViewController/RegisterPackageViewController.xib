@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterPackageViewController" customModule="RegisterForAPackageApp" customModuleProvider="target">
             <connections>
+                <outlet property="popupView" destination="51i-vv-f47" id="aNT-WY-Pi0"/>
                 <outlet property="registerTableView" destination="yHX-E8-1Vq" id="LVi-3F-iJI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -19,23 +20,78 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yHX-E8-1Vq">
-                    <rect key="frame" x="0.0" y="50" width="375" height="728"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yHX-E8-1Vq">
+                    <rect key="frame" x="0.0" y="70" width="375" height="708"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="51i-vv-f47">
+                    <rect key="frame" x="163" y="50" width="184" height="280"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Ui0-VE-HMF">
+                            <rect key="frame" x="0.0" y="0.0" width="184" height="280"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ygk-MD-i3m">
+                                    <rect key="frame" x="0.0" y="0.0" width="152.66666666666666" height="34.333333333333336"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="home" title="Giá tăng dần " imagePadding="8"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QO-BF-Ryt">
+                                    <rect key="frame" x="0.0" y="47" width="151.33333333333334" height="34.333333333333343"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="buildings" title="Giá giảm dần" imagePadding="8"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAc-xn-N3C">
+                                    <rect key="frame" x="0.0" y="94" width="134" height="34.333333333333343"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="location" title="Gói nổi bật" imagePadding="8"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQi-U5-j08">
+                                    <rect key="frame" x="0.0" y="140.66666666666666" width="151.33333333333334" height="38"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="File_Remove" title="Gói tiết kiệm" imagePadding="8"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRd-wz-9mK">
+                                    <rect key="frame" x="0.0" y="191.33333333333334" width="171.33333333333334" height="38"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="File_Remove" title="Gói data khủng" imagePadding="8"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAH-ge-WqT">
+                                    <rect key="frame" x="0.0" y="242" width="151.33333333333334" height="38"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="File_Remove" title="Gói gọi thoại" imagePadding="8"/>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Ui0-VE-HMF" secondAttribute="trailing" id="0Ta-FQ-58X"/>
+                        <constraint firstAttribute="width" constant="184" id="7gS-sM-E4K"/>
+                        <constraint firstItem="Ui0-VE-HMF" firstAttribute="leading" secondItem="51i-vv-f47" secondAttribute="leading" id="F5d-4L-z7y"/>
+                        <constraint firstAttribute="height" constant="280" id="NuB-ee-EaL"/>
+                        <constraint firstAttribute="bottom" secondItem="Ui0-VE-HMF" secondAttribute="bottom" id="ZPq-QK-Whj"/>
+                        <constraint firstItem="Ui0-VE-HMF" firstAttribute="top" secondItem="51i-vv-f47" secondAttribute="top" id="fe4-uz-Zt8"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="yHX-E8-1Vq" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="7qy-Gd-vPm"/>
+                <constraint firstItem="51i-vv-f47" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="AAm-LA-EQ0"/>
                 <constraint firstItem="yHX-E8-1Vq" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="ReB-Vi-4RH"/>
-                <constraint firstItem="yHX-E8-1Vq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="TKk-bE-Wqh"/>
+                <constraint firstItem="yHX-E8-1Vq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="TKk-bE-Wqh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="51i-vv-f47" secondAttribute="trailing" constant="28" id="ede-m8-QDH"/>
                 <constraint firstItem="yHX-E8-1Vq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zlb-RI-kSz"/>
             </constraints>
             <point key="canvasLocation" x="10.4" y="-11.083743842364532"/>
         </view>
     </objects>
     <resources>
+        <image name="File_Remove" width="24" height="24"/>
+        <image name="buildings" width="20" height="20"/>
+        <image name="home" width="20" height="20"/>
+        <image name="location" width="20" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
