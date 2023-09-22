@@ -20,15 +20,14 @@ class RegisterViewController: UIViewController {
         txtPhoneNumber.delegate = self
         setupView()
         setupKeyboard()
-        
     }
     func setupView() {
         btnNext.layer.cornerRadius = 12
-        btnNext.titleLabel?.font = UIFont.systemFont(ofSize: 16)
         btnNext.isUserInteractionEnabled = false
         btnNext.backgroundColor = .init(hex: "EDF2F7")
         btnNext.titleLabel?.textColor = .init(hex: "A0AEC0")
         btnNext.titleLabel?.tintColor = .init(hex: "FFFFFF")
+        
     }
     
     func setupKeyboard() {
@@ -58,7 +57,6 @@ class RegisterViewController: UIViewController {
         let vc = RegisterPackageViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
 }
 extension RegisterViewController: UITextFieldDelegate {
     
@@ -100,6 +98,7 @@ extension RegisterViewController: UITextFieldDelegate {
         } else {
             return true
         }
+
     }
     
     func textFieldDidChangeSelection(_ textField: UITextField) {

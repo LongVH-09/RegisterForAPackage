@@ -85,7 +85,9 @@
                                 <constraint firstAttribute="height" constant="52" id="7ub-mi-gMm"/>
                             </constraints>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Tiếp tục" subtitle=""/>
+                            <buttonConfiguration key="configuration" style="plain" title="Tiếp tục" subtitle="">
+                                <fontDescription key="titleFontDescription" name="PlusJakartaSans-SemiBold" family="Plus Jakarta Sans" pointSize="16"/>
+                            </buttonConfiguration>
                             <connections>
                                 <action selector="process:" destination="-1" eventType="touchUpInside" id="ogY-xo-uzN"/>
                             </connections>
@@ -127,11 +129,6 @@
             <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
         </view>
     </objects>
-    <designables>
-        <designable name="bzq-Oc-oLZ">
-            <size key="intrinsicContentSize" width="86" height="34.333333333333336"/>
-        </designable>
-    </designables>
     <resources>
         <image name="Logo 48x48" width="48" height="48"/>
         <image name="StarImg" width="6" height="6"/>

@@ -67,6 +67,10 @@ extension RegisterPackageViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 236
     }
+    @objc func tapgetImage() {
+        let vc = RegisterPackageDetailViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 extension RegisterPackageViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -75,7 +79,11 @@ extension RegisterPackageViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = registerTableView.dequeueCell(withType: RegisterPackageTableViewCell.self) as! RegisterPackageTableViewCell
-        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapgetImage))
+
+        cell.imgPackage.isUserInteractionEnabled = true
+        cell.imgPackage.tag = indexPath.row
+        cell.imgPackage.addGestureRecognizer(tapGestureRecognizer)
         return cell
     }
     

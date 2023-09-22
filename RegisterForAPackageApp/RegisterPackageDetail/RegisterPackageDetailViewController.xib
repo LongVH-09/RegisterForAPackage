@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PlusJakartaSans-Bold.ttf">
+            <string>PlusJakartaSans-Bold</string>
+        </array>
+        <array key="PlusJakartaSans-Medium.ttf">
+            <string>PlusJakartaSans-Medium</string>
+        </array>
+        <array key="PlusJakartaSans-Regular.ttf">
+            <string>PlusJakartaSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterPackageDetailViewController" customModule="RegisterForAPackageApp" customModuleProvider="target">
+            <connections>
+                <outlet property="btnNext" destination="VvX-A6-2IO" id="Qwd-L1-Qtm"/>
+                <outlet property="gradientView" destination="ThS-yF-siv" id="1Qm-Vs-teh"/>
+                <outlet property="lblNote" destination="doP-EX-0aV" id="b5y-1x-5zQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ThS-yF-siv">
+                    <rect key="frame" x="0.0" y="50" width="375" height="728"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo 48x48" translatesAutoresizingMaskIntoConstraints="NO" id="rn9-mr-wXp">
+                            <rect key="frame" x="28" y="16" width="48" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="rn9-mr-wXp" secondAttribute="height" id="AR9-tK-c9Y"/>
+                                <constraint firstAttribute="width" constant="48" id="Y8x-H1-GkF"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đăng ký gói cước" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUc-sq-Bm4">
+                            <rect key="frame" x="28" y="80" width="319" height="30.333333333333329"/>
+                            <fontDescription key="fontDescription" name="PlusJakartaSans-Bold" family="Plus Jakarta Sans" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chỉ áp dụng cho thuê bao nhà mạng Mobifone" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTY-nB-Zkv">
+                            <rect key="frame" x="28" y="118.33333333333334" width="319" height="17.666666666666657"/>
+                            <fontDescription key="fontDescription" name="PlusJakartaSans-Medium" family="Plus Jakarta Sans" pointSize="14"/>
+                            <color key="textColor" red="0.44313725490196076" green="0.50196078431372548" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Card_2" translatesAutoresizingMaskIntoConstraints="NO" id="Yq9-Q5-PJA">
+                            <rect key="frame" x="28" y="180" width="319" height="160"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="160" id="Mws-ak-eI2"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doP-EX-0aV">
+                            <rect key="frame" x="28" y="356" width="319" height="30.333333333333314"/>
+                            <string key="text">Chúng tôi sẽ thành toán 399.000 vnđ từ tài khoản
+của bạn để đăng ký gói cước MFY399</string>
+                            <fontDescription key="fontDescription" name="PlusJakartaSans-Regular" family="Plus Jakarta Sans" pointSize="12"/>
+                            <color key="textColor" red="0.44313725490196076" green="0.50196078431372548" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VvX-A6-2IO">
+                            <rect key="frame" x="28" y="656" width="319" height="52"/>
+                            <color key="backgroundColor" red="0.23529411764705882" green="0.58431372549019611" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="3TN-lF-e68"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Tiếp tục đăng ký">
+                                <fontDescription key="titleFontDescription" name="PlusJakartaSans-SemiBold" family="Plus Jakarta Sans" pointSize="16"/>
+                                <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </buttonConfiguration>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="doP-EX-0aV" secondAttribute="trailing" constant="28" id="8vU-nU-LPy"/>
+                        <constraint firstItem="Yq9-Q5-PJA" firstAttribute="leading" secondItem="ThS-yF-siv" secondAttribute="leading" constant="28" id="Kuf-iK-pC8"/>
+                        <constraint firstItem="Yq9-Q5-PJA" firstAttribute="top" secondItem="LTY-nB-Zkv" secondAttribute="bottom" constant="44" id="SEJ-Oq-yjq"/>
+                        <constraint firstItem="rn9-mr-wXp" firstAttribute="top" secondItem="ThS-yF-siv" secondAttribute="top" constant="16" id="SXC-xY-0PQ"/>
+                        <constraint firstAttribute="trailing" secondItem="VvX-A6-2IO" secondAttribute="trailing" constant="28" id="c4Z-ap-jhg"/>
+                        <constraint firstAttribute="trailing" secondItem="fUc-sq-Bm4" secondAttribute="trailing" constant="28" id="dLO-Xi-45h"/>
+                        <constraint firstAttribute="trailing" secondItem="Yq9-Q5-PJA" secondAttribute="trailing" constant="28" id="fi7-Wa-eDT"/>
+                        <constraint firstItem="doP-EX-0aV" firstAttribute="top" secondItem="Yq9-Q5-PJA" secondAttribute="bottom" constant="16" id="ifv-Hz-13F"/>
+                        <constraint firstItem="VvX-A6-2IO" firstAttribute="leading" secondItem="ThS-yF-siv" secondAttribute="leading" constant="28" id="oaY-Uz-5fF"/>
+                        <constraint firstItem="LTY-nB-Zkv" firstAttribute="top" secondItem="fUc-sq-Bm4" secondAttribute="bottom" constant="8" id="opw-us-6jw"/>
+                        <constraint firstItem="doP-EX-0aV" firstAttribute="leading" secondItem="ThS-yF-siv" secondAttribute="leading" constant="28" id="qZM-8w-mnn"/>
+                        <constraint firstItem="LTY-nB-Zkv" firstAttribute="leading" secondItem="ThS-yF-siv" secondAttribute="leading" constant="28" id="tLF-je-2Jp"/>
+                        <constraint firstAttribute="trailing" secondItem="LTY-nB-Zkv" secondAttribute="trailing" constant="28" id="vZn-xm-BbE"/>
+                        <constraint firstItem="rn9-mr-wXp" firstAttribute="leading" secondItem="ThS-yF-siv" secondAttribute="leading" constant="28" id="vlK-Ob-XIW"/>
+                        <constraint firstItem="fUc-sq-Bm4" firstAttribute="top" secondItem="rn9-mr-wXp" secondAttribute="bottom" constant="16" id="yEh-lV-2QA"/>
+                        <constraint firstItem="fUc-sq-Bm4" firstAttribute="leading" secondItem="ThS-yF-siv" secondAttribute="leading" constant="28" id="zWN-TR-9HJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ThS-yF-siv" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="87s-l7-dML"/>
+                <constraint firstItem="ThS-yF-siv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ISa-cL-cz3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="VvX-A6-2IO" secondAttribute="bottom" constant="20" id="TKo-ry-Js8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="ThS-yF-siv" secondAttribute="top" id="WiI-Gy-CIv"/>
+                <constraint firstItem="ThS-yF-siv" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="aU4-6N-jSt"/>
+            </constraints>
+            <point key="canvasLocation" x="15.199999999999999" y="-11.083743842364532"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Card_2" width="337" height="160"/>
+        <image name="Logo 48x48" width="48" height="48"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -31,6 +31,8 @@
 		B0F600D82ABC40A300961542 /* RegisterPackageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F600D62ABC40A300961542 /* RegisterPackageTableViewCell.xib */; };
 		B0F600DB2ABC49AA00961542 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F600DA2ABC49AA00961542 /* BaseViewModel.swift */; };
 		B0F600DE2ABC4A5E00961542 /* BaseViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F600DD2ABC4A5E00961542 /* BaseViewControllerProtocol.swift */; };
+		B0F600E62ABD864A00961542 /* RegisterPackageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F600E42ABD864A00961542 /* RegisterPackageDetailViewController.swift */; };
+		B0F600E72ABD864A00961542 /* RegisterPackageDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F600E52ABD864A00961542 /* RegisterPackageDetailViewController.xib */; };
 		CB132835663F30033BC2F782 /* Pods_RegisterForAPackageApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DC9526E4B68AAECA7AE64F7 /* Pods_RegisterForAPackageApp.framework */; };
 		EB2F11AA777F21F698B157D8 /* Pods_RegisterForAPackageApp_RegisterForAPackageAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88B5015174E70B723915F16C /* Pods_RegisterForAPackageApp_RegisterForAPackageAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -88,6 +90,8 @@
 		B0F600D62ABC40A300961542 /* RegisterPackageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterPackageTableViewCell.xib; sourceTree = "<group>"; };
 		B0F600DA2ABC49AA00961542 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		B0F600DD2ABC4A5E00961542 /* BaseViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerProtocol.swift; sourceTree = "<group>"; };
+		B0F600E42ABD864A00961542 /* RegisterPackageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPackageDetailViewController.swift; sourceTree = "<group>"; };
+		B0F600E52ABD864A00961542 /* RegisterPackageDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterPackageDetailViewController.xib; sourceTree = "<group>"; };
 		B5CC30BD6A540B94A02A7668 /* Pods-RegisterForAPackageApp-RegisterForAPackageAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegisterForAPackageApp-RegisterForAPackageAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-RegisterForAPackageApp-RegisterForAPackageAppUITests/Pods-RegisterForAPackageApp-RegisterForAPackageAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,6 +164,7 @@
 				B03191672ABA9EAD003E8040 /* SceneDelegate.swift */,
 				B03191692ABA9EAD003E8040 /* ViewController.swift */,
 				B0F600C22ABBDA5C00961542 /* RegisterViewController */,
+				B0F600DF2ABD84CB00961542 /* RegisterPackageDetail */,
 				B0F600CB2ABC35BF00961542 /* RegisterPackageViewController */,
 				B0EF11DD2ABACB540043AB53 /* Gradient */,
 				B0EF11E12ABACC040043AB53 /* Extension */,
@@ -282,6 +287,15 @@
 				B0F600DD2ABC4A5E00961542 /* BaseViewControllerProtocol.swift */,
 			);
 			path = BaseViewControllerProtocol;
+			sourceTree = "<group>";
+		};
+		B0F600DF2ABD84CB00961542 /* RegisterPackageDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B0F600E42ABD864A00961542 /* RegisterPackageDetailViewController.swift */,
+				B0F600E52ABD864A00961542 /* RegisterPackageDetailViewController.xib */,
+			);
+			path = RegisterPackageDetail;
 			sourceTree = "<group>";
 		};
 		BBF541DD8B0B144BB44F7ABB /* Pods */ = {
@@ -409,6 +423,7 @@
 				B0F600D32ABC38F900961542 /* RegisterPackageViewController.xib in Resources */,
 				B03191722ABA9EAF003E8040 /* LaunchScreen.storyboard in Resources */,
 				B0F600D82ABC40A300961542 /* RegisterPackageTableViewCell.xib in Resources */,
+				B0F600E72ABD864A00961542 /* RegisterPackageDetailViewController.xib in Resources */,
 				B0F600C62ABBDA7A00961542 /* RegisterViewController.xib in Resources */,
 				B031916F2ABA9EAF003E8040 /* Assets.xcassets in Resources */,
 				B0EF11E72ABAE60C0043AB53 /* Plus_Jakarta_Sans in Resources */,
@@ -553,6 +568,7 @@
 				B0EF11DF2ABACB6F0043AB53 /* GradientView.swift in Sources */,
 				B0F600CA2ABBFF8A00961542 /* Validators.swift in Sources */,
 				B0F600DE2ABC4A5E00961542 /* BaseViewControllerProtocol.swift in Sources */,
+				B0F600E62ABD864A00961542 /* RegisterPackageDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
