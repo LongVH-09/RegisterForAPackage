@@ -64,7 +64,7 @@ extension RegisterViewController: UITextFieldDelegate {
         if txtPhoneNumber.text?.count ?? 0 == 10 {
             
             btnNext.isUserInteractionEnabled = true
-            btnNext.backgroundColor = .init(hex: "3C95FB")
+            btnNext.backgroundColor = .init(hex: "4364F7")
             btnNext.titleLabel?.textColor = .init(hex: "FFFFFF")
         } else {
             btnNext.isUserInteractionEnabled = false
@@ -105,7 +105,7 @@ extension RegisterViewController: UITextFieldDelegate {
         if txtPhoneNumber.text?.count ?? 0 == 10 {
             
             btnNext.isUserInteractionEnabled = true
-            btnNext.backgroundColor = .init(hex: "3C95FB")
+            btnNext.backgroundColor = .init(hex: "4364F7")
             btnNext.titleLabel?.textColor = .init(hex: "FFFFFF")
         } else {
             btnNext.isUserInteractionEnabled = false

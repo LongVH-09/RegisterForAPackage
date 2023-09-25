@@ -21,5 +21,13 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>PlusJakartaSans-Bold.ttf</string>
+		<string>PlusJakartaSans-BoldItalic.ttf</string>
+		<string>PlusJakartaSans-SemiBold.ttf</string>
+		<string>PlusJakartaSans.ttf</string>
+		<string>PlusJakartaSans-Medium.ttf</string>
+	</array>
 </dict>
 </plist>

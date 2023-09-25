@@ -17,6 +17,10 @@
 		B031917D2ABA9EB0003E8040 /* RegisterForAPackageAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B031917C2ABA9EB0003E8040 /* RegisterForAPackageAppTests.swift */; };
 		B03191872ABA9EB0003E8040 /* RegisterForAPackageAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03191862ABA9EB0003E8040 /* RegisterForAPackageAppUITests.swift */; };
 		B03191892ABA9EB0003E8040 /* RegisterForAPackageAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03191882ABA9EB0003E8040 /* RegisterForAPackageAppUITestsLaunchTests.swift */; };
+		B090B1142AC12BE30078A2BA /* RegistrationConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B090B1122AC12BE30078A2BA /* RegistrationConfirmationViewController.swift */; };
+		B090B1152AC12BE30078A2BA /* RegistrationConfirmationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B090B1132AC12BE30078A2BA /* RegistrationConfirmationViewController.xib */; };
+		B090B1192AC136FF0078A2BA /* SMSMessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B090B1172AC136FF0078A2BA /* SMSMessagesViewController.swift */; };
+		B090B11A2AC136FF0078A2BA /* SMSMessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B090B1182AC136FF0078A2BA /* SMSMessagesViewController.xib */; };
 		B0EF11DF2ABACB6F0043AB53 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EF11DE2ABACB6F0043AB53 /* GradientView.swift */; };
 		B0EF11E32ABACC200043AB53 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0EF11E22ABACC200043AB53 /* Extension.swift */; };
 		B0EF11E72ABAE60C0043AB53 /* Plus_Jakarta_Sans in Resources */ = {isa = PBXBuildFile; fileRef = B0EF11E62ABAE60C0043AB53 /* Plus_Jakarta_Sans */; };
@@ -76,9 +80,13 @@
 		B03191822ABA9EB0003E8040 /* RegisterForAPackageAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegisterForAPackageAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B03191862ABA9EB0003E8040 /* RegisterForAPackageAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterForAPackageAppUITests.swift; sourceTree = "<group>"; };
 		B03191882ABA9EB0003E8040 /* RegisterForAPackageAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterForAPackageAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B090B1122AC12BE30078A2BA /* RegistrationConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationConfirmationViewController.swift; sourceTree = "<group>"; };
+		B090B1132AC12BE30078A2BA /* RegistrationConfirmationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistrationConfirmationViewController.xib; sourceTree = "<group>"; };
+		B090B1172AC136FF0078A2BA /* SMSMessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSMessagesViewController.swift; sourceTree = "<group>"; };
+		B090B1182AC136FF0078A2BA /* SMSMessagesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SMSMessagesViewController.xib; sourceTree = "<group>"; };
 		B0EF11DE2ABACB6F0043AB53 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		B0EF11E22ABACC200043AB53 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		B0EF11E62ABAE60C0043AB53 /* Plus_Jakarta_Sans */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Plus_Jakarta_Sans; sourceTree = "<group>"; };
+		B0EF11E62ABAE60C0043AB53 /* Plus_Jakarta_Sans */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Plus_Jakarta_Sans; path = Plus_JaKarTa_Sans/Plus_Jakarta_Sans; sourceTree = "<group>"; };
 		B0F600C02ABBD58400961542 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		B0F600C32ABBDA7A00961542 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		B0F600C42ABBDA7A00961542 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
@@ -166,6 +174,8 @@
 				B0F600C22ABBDA5C00961542 /* RegisterViewController */,
 				B0F600DF2ABD84CB00961542 /* RegisterPackageDetail */,
 				B0F600CB2ABC35BF00961542 /* RegisterPackageViewController */,
+				B090B1112AC12BA10078A2BA /* RegistrationConfirmationController */,
+				B090B1162AC136E50078A2BA /* SMSMessagesViewController */,
 				B0EF11DD2ABACB540043AB53 /* Gradient */,
 				B0EF11E12ABACC040043AB53 /* Extension */,
 				B0F600BF2ABBD55200961542 /* helpers */,
@@ -190,6 +200,24 @@
 				B03191882ABA9EB0003E8040 /* RegisterForAPackageAppUITestsLaunchTests.swift */,
 			);
 			path = RegisterForAPackageAppUITests;
+			sourceTree = "<group>";
+		};
+		B090B1112AC12BA10078A2BA /* RegistrationConfirmationController */ = {
+			isa = PBXGroup;
+			children = (
+				B090B1122AC12BE30078A2BA /* RegistrationConfirmationViewController.swift */,
+				B090B1132AC12BE30078A2BA /* RegistrationConfirmationViewController.xib */,
+			);
+			path = RegistrationConfirmationController;
+			sourceTree = "<group>";
+		};
+		B090B1162AC136E50078A2BA /* SMSMessagesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B090B1172AC136FF0078A2BA /* SMSMessagesViewController.swift */,
+				B090B1182AC136FF0078A2BA /* SMSMessagesViewController.xib */,
+			);
+			path = SMSMessagesViewController;
 			sourceTree = "<group>";
 		};
 		B0EF11DC2ABAC9FB0043AB53 /* Resources */ = {
@@ -222,17 +250,9 @@
 		B0EF11E42ABAE5940043AB53 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				B0EF11E52ABAE5BC0043AB53 /* Plus_JaKarTa_Sans */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
-		B0EF11E52ABAE5BC0043AB53 /* Plus_JaKarTa_Sans */ = {
-			isa = PBXGroup;
-			children = (
 				B0EF11E62ABAE60C0043AB53 /* Plus_Jakarta_Sans */,
 			);
-			path = Plus_JaKarTa_Sans;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		B0F600BF2ABBD55200961542 /* helpers */ = {
@@ -422,10 +442,12 @@
 			files = (
 				B0F600D32ABC38F900961542 /* RegisterPackageViewController.xib in Resources */,
 				B03191722ABA9EAF003E8040 /* LaunchScreen.storyboard in Resources */,
+				B090B11A2AC136FF0078A2BA /* SMSMessagesViewController.xib in Resources */,
 				B0F600D82ABC40A300961542 /* RegisterPackageTableViewCell.xib in Resources */,
 				B0F600E72ABD864A00961542 /* RegisterPackageDetailViewController.xib in Resources */,
 				B0F600C62ABBDA7A00961542 /* RegisterViewController.xib in Resources */,
 				B031916F2ABA9EAF003E8040 /* Assets.xcassets in Resources */,
+				B090B1152AC12BE30078A2BA /* RegistrationConfirmationViewController.xib in Resources */,
 				B0EF11E72ABAE60C0043AB53 /* Plus_Jakarta_Sans in Resources */,
 				B031916D2ABA9EAD003E8040 /* Main.storyboard in Resources */,
 			);
@@ -555,9 +577,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B090B1142AC12BE30078A2BA /* RegistrationConfirmationViewController.swift in Sources */,
 				B0EF11E32ABACC200043AB53 /* Extension.swift in Sources */,
 				B031916A2ABA9EAD003E8040 /* ViewController.swift in Sources */,
 				B0F600D72ABC40A300961542 /* RegisterPackageTableViewCell.swift in Sources */,
+				B090B1192AC136FF0078A2BA /* SMSMessagesViewController.swift in Sources */,
 				B0F600D22ABC38F900961542 /* RegisterPackageViewController.swift in Sources */,
 				B0F600C52ABBDA7A00961542 /* RegisterViewController.swift in Sources */,
 				B0F600DB2ABC49AA00961542 /* BaseViewModel.swift in Sources */,

@@ -145,7 +145,7 @@ số điện thoại 👋</string>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gi0-nd-RQf">
                                                 <rect key="frame" x="0.0" y="0.0" width="273" height="52"/>
-                                                <color key="backgroundColor" red="0.25482177734375" green="0.48382760428048516" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.2627450980392157" green="0.39215686274509803" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="52" id="YgW-hd-yJ1"/>
                                                     <constraint firstAttribute="width" constant="273" id="tjY-Tm-lpr"/>

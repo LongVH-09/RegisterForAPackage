@@ -70,7 +70,7 @@ của bạn để đăng ký gói cước MFY399</string>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VvX-A6-2IO">
                             <rect key="frame" x="28" y="656" width="319" height="52"/>
-                            <color key="backgroundColor" red="0.23529411764705882" green="0.58431372549019611" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.2627450980392157" green="0.39215686274509803" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="52" id="3TN-lF-e68"/>
                             </constraints>
@@ -79,6 +79,9 @@ của bạn để đăng ký gói cước MFY399</string>
                                 <fontDescription key="titleFontDescription" name="PlusJakartaSans-SemiBold" family="Plus Jakarta Sans" pointSize="16"/>
                                 <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </buttonConfiguration>
+                            <connections>
+                                <action selector="btnNextAction:" destination="-1" eventType="touchUpInside" id="WeS-sl-gNu"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
