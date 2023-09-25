@@ -137,6 +137,9 @@ số điện thoại 👋</string>
                                                     <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
                                                     <color key="baseForegroundColor" red="0.81568627450980391" green="0.070588235294117646" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="processRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U4O-aW-3Vm"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>

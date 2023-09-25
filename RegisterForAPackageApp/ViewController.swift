@@ -46,6 +46,10 @@ class ViewController: UIViewController {
         
     }
     @IBAction func btnLoginAction(_ sender: Any) {
+        
+    }
+    
+    @IBAction func processRegister(_ sender: Any) {
         let vc = RegisterViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }

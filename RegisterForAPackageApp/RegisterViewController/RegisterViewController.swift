@@ -13,6 +13,8 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var btnNext: UIButton!
     
+    @IBOutlet weak var btnNextBottomConstraint: NSLayoutConstraint!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,13 +46,13 @@ class RegisterViewController: UIViewController {
     @objc func keyboardWillShow(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             if self.view.frame.origin.y == 0 {
-
+                btnNextBottomConstraint.constant = keyboardSize.height
             }
         }
     }
     
     @objc func keyboardWillHide(notification: NSNotification) {
-        
+        btnNextBottomConstraint.constant = 20
     }
     
     @IBAction func process(_ sender: Any) {
@@ -74,9 +76,9 @@ extension RegisterViewController: UITextFieldDelegate {
             
         }
     }
-    
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
 
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
         if textField == txtPhoneNumber {
             var is_check : Bool
             let aSet = NSCharacterSet(charactersIn:"0123456789").inverted

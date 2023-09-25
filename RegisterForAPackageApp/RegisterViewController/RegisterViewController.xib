@@ -19,6 +19,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="RegisterForAPackageApp" customModuleProvider="target">
             <connections>
                 <outlet property="btnNext" destination="bzq-Oc-oLZ" id="ymB-rt-Emg"/>
+                <outlet property="btnNextBottomConstraint" destination="ebx-bW-oMa" id="ovp-Fl-utw"/>
                 <outlet property="txtPhoneNumber" destination="FJV-Do-5Ms" id="usr-aY-77d"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -38,7 +39,7 @@
                                 <constraint firstAttribute="width" secondItem="OKP-77-Sek" secondAttribute="height" id="vJC-6P-bKV"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đăng ký tài khoản" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ag-Xp-InZ">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đăng ký tài khoản" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ag-Xp-InZ">
                             <rect key="frame" x="28" y="126.99999999999999" width="337" height="30.333333333333329"/>
                             <fontDescription key="fontDescription" name="PlusJakartaSans-Bold" family="Plus Jakarta Sans" pointSize="24"/>
                             <color key="textColor" red="0.10196078431372549" green="0.12549019607843137" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -119,11 +120,11 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="bzq-Oc-oLZ" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="-20" id="7se-eE-ryC"/>
                 <constraint firstItem="OKP-77-Sek" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="4" id="J0k-eU-OcR"/>
                 <constraint firstItem="9pK-OW-p70" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Lfs-dI-KhX"/>
                 <constraint firstItem="9pK-OW-p70" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="XRT-Wd-LVz"/>
                 <constraint firstItem="9pK-OW-p70" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="a0n-HX-5uI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bzq-Oc-oLZ" secondAttribute="bottom" constant="20" id="ebx-bW-oMa"/>
                 <constraint firstAttribute="bottom" secondItem="9pK-OW-p70" secondAttribute="bottom" id="xR8-1I-j5U"/>
             </constraints>
             <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>

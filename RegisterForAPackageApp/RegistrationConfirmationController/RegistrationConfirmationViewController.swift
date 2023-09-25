@@ -18,6 +18,7 @@ class RegistrationConfirmationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setBackButton()
         setupView()
     }
     
@@ -34,7 +35,7 @@ class RegistrationConfirmationViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: false)
+        navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
     @IBAction func processBack(_ sender: Any) {

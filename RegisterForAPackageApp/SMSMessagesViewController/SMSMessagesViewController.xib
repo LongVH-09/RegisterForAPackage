@@ -73,10 +73,21 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTf-M7-h0i">
+                                    <rect key="frame" x="301" y="44" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="GQu-5L-rpq"/>
+                                        <constraint firstAttribute="width" secondItem="sTf-M7-h0i" secondAttribute="height" id="USs-EM-XK2"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="document"/>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" red="0.97647058823529409" green="0.9882352941176471" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
+                                <constraint firstAttribute="trailing" secondItem="sTf-M7-h0i" secondAttribute="trailing" constant="16" id="M2v-5x-Md0"/>
                                 <constraint firstItem="arJ-Wg-exf" firstAttribute="top" secondItem="eZp-DE-TYX" secondAttribute="top" constant="20" id="lLX-JL-D7q"/>
+                                <constraint firstAttribute="bottom" secondItem="sTf-M7-h0i" secondAttribute="bottom" constant="24" id="m6c-kW-Nfu"/>
                                 <constraint firstItem="mWG-Am-V1k" firstAttribute="leading" secondItem="eZp-DE-TYX" secondAttribute="leading" constant="16" id="oo0-py-L6a"/>
                                 <constraint firstItem="mWG-Am-V1k" firstAttribute="top" secondItem="arJ-Wg-exf" secondAttribute="bottom" constant="2" id="rDG-SW-9xW"/>
                                 <constraint firstItem="arJ-Wg-exf" firstAttribute="leading" secondItem="eZp-DE-TYX" secondAttribute="leading" constant="16" id="uH8-CE-PKJ"/>
@@ -89,31 +100,28 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="2cm-jN-Fci">
-                            <rect key="frame" x="80" y="707.33333333333337" width="233" height="21.666666666666629"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="2cm-jN-Fci">
+                            <rect key="frame" x="80" y="692.33333333333337" width="233" height="36.666666666666629"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đã nhận thông tin tài khoản?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48m-o8-2iq">
-                                    <rect key="frame" x="0.0" y="0.0" width="157.66666666666666" height="21.666666666666668"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="153" height="36.666666666666664"/>
                                     <fontDescription key="fontDescription" name="PlusJakartaSans-Regular" family="Plus Jakarta Sans" pointSize="12"/>
                                     <color key="textColor" red="0.44313725490196076" green="0.50196078431372548" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRq-lb-mJU">
-                                    <rect key="frame" x="158.66666666666666" y="0.0" width="74.333333333333343" height="21.666666666666668"/>
+                                    <rect key="frame" x="153" y="0.0" width="80" height="36.666666666666664"/>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" title="Đăng nhập" subtitle="" titleAlignment="leading">
+                                    <buttonConfiguration key="configuration" style="plain" title="Đăng nhập" subtitle="">
                                         <fontDescription key="titleFontDescription" name="PlusJakartaSans-Bold" family="Plus Jakarta Sans" pointSize="12"/>
-                                        <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="10"/>
+                                        <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="18"/>
                                         <color key="baseForegroundColor" red="0.44313725490196076" green="0.50196078431372548" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </buttonConfiguration>
                                 </button>
                             </subviews>
-                            <constraints>
-                                <constraint firstItem="sRq-lb-mJU" firstAttribute="leading" secondItem="48m-o8-2iq" secondAttribute="trailing" constant="1" id="XlW-tD-hHv"/>
-                            </constraints>
                         </stackView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGT-5z-kdi">
-                            <rect key="frame" x="28" y="634.33333333333337" width="337" height="52"/>
+                            <rect key="frame" x="28" y="619.33333333333337" width="337" height="52"/>
                             <color key="backgroundColor" red="0.2627450980392157" green="0.39215686274509803" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="52" id="Ba9-kx-4ZW"/>
@@ -163,6 +171,7 @@
     <resources>
         <image name="SendEmail" width="181" height="180"/>
         <image name="back_icon" width="24" height="24"/>
+        <image name="document" width="20" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
