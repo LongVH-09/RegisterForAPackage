@@ -19,7 +19,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="RegisterForAPackageApp" customModuleProvider="target">
             <connections>
                 <outlet property="btnNext" destination="bzq-Oc-oLZ" id="ymB-rt-Emg"/>
-                <outlet property="btnNextBottomConstraint" destination="ebx-bW-oMa" id="ovp-Fl-utw"/>
+                <outlet property="btnNextBottomConstraint" destination="Ydr-Hq-4gs" id="5XB-vY-bsJ"/>
                 <outlet property="txtPhoneNumber" destination="FJV-Do-5Ms" id="usr-aY-77d"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -80,7 +80,7 @@
                             </constraints>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzq-Oc-oLZ">
-                            <rect key="frame" x="28" y="746" width="337" height="52"/>
+                            <rect key="frame" x="28" y="700" width="337" height="52"/>
                             <color key="backgroundColor" red="0.92941176470588238" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="52" id="7ub-mi-gMm"/>
@@ -90,9 +90,32 @@
                                 <fontDescription key="titleFontDescription" name="PlusJakartaSans-SemiBold" family="Plus Jakarta Sans" pointSize="16"/>
                             </buttonConfiguration>
                             <connections>
-                                <action selector="process:" destination="-1" eventType="touchUpInside" id="ogY-xo-uzN"/>
+                                <action selector="processNextAction:" destination="-1" eventType="touchUpInside" id="nkK-Ip-olb"/>
                             </connections>
                         </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="E0q-Yp-kOB">
+                            <rect key="frame" x="50" y="773" width="293" height="24"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Đã đăng ký gói cước mFamily?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhA-Es-gwc">
+                                    <rect key="frame" x="0.0" y="0.0" width="195.33333333333334" height="24"/>
+                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                    <color key="textColor" red="0.44313725490196076" green="0.50196078431372548" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZu-QU-6yu">
+                                    <rect key="frame" x="195.33333333333334" y="0.0" width="97.666666666666657" height="24"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Đăng nhập">
+                                        <fontDescription key="titleFontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
+                                        <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="16"/>
+                                        <color key="baseForegroundColor" red="0.81568627450980391" green="0.070588235294117646" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="processLoginVC:" destination="-1" eventType="touchUpInside" id="j9z-bd-K53"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
@@ -100,19 +123,23 @@
                         <constraint firstItem="FJV-Do-5Ms" firstAttribute="leading" secondItem="9pK-OW-p70" secondAttribute="leading" constant="28" id="ApI-rV-AbO"/>
                         <constraint firstItem="Kfo-df-nRU" firstAttribute="top" secondItem="8Ag-Xp-InZ" secondAttribute="bottom" constant="8" id="DxB-h1-Pgi"/>
                         <constraint firstItem="8Ag-Xp-InZ" firstAttribute="leading" secondItem="9pK-OW-p70" secondAttribute="leading" constant="28" id="EAn-8Y-Xhh"/>
+                        <constraint firstItem="E0q-Yp-kOB" firstAttribute="leading" secondItem="9pK-OW-p70" secondAttribute="leading" constant="50" id="I73-j2-5nT"/>
                         <constraint firstItem="bzq-Oc-oLZ" firstAttribute="leading" secondItem="9pK-OW-p70" secondAttribute="leading" constant="28" id="IDV-FW-VE2"/>
                         <constraint firstAttribute="trailing" secondItem="Kfo-df-nRU" secondAttribute="trailing" constant="28" id="PcX-ol-PfY"/>
                         <constraint firstItem="Kfo-df-nRU" firstAttribute="leading" secondItem="9pK-OW-p70" secondAttribute="leading" constant="28" id="Pjj-Ra-nRI"/>
                         <constraint firstItem="UPF-Kj-Ugd" firstAttribute="top" secondItem="IRp-Qi-VI1" secondAttribute="top" constant="3" id="SwF-3O-Xuj"/>
                         <constraint firstItem="MNS-5e-1pe" firstAttribute="centerY" secondItem="FJV-Do-5Ms" secondAttribute="centerY" id="V13-2f-TCf"/>
                         <constraint firstAttribute="trailing" secondItem="bzq-Oc-oLZ" secondAttribute="trailing" constant="28" id="YIS-Ya-Tqe"/>
+                        <constraint firstItem="E0q-Yp-kOB" firstAttribute="top" secondItem="bzq-Oc-oLZ" secondAttribute="bottom" constant="21" id="Ydr-Hq-4gs"/>
                         <constraint firstItem="8Ag-Xp-InZ" firstAttribute="top" secondItem="OKP-77-Sek" secondAttribute="bottom" constant="16" id="YnD-eG-d5b"/>
                         <constraint firstItem="FJV-Do-5Ms" firstAttribute="top" secondItem="IRp-Qi-VI1" secondAttribute="bottom" constant="8" id="brh-Gz-Shd"/>
                         <constraint firstItem="IRp-Qi-VI1" firstAttribute="top" secondItem="Kfo-df-nRU" secondAttribute="bottom" constant="16" id="gYu-Kn-mgA"/>
                         <constraint firstItem="MNS-5e-1pe" firstAttribute="leading" secondItem="FJV-Do-5Ms" secondAttribute="leading" constant="16" id="jxh-hS-tJP"/>
                         <constraint firstItem="UPF-Kj-Ugd" firstAttribute="leading" secondItem="IRp-Qi-VI1" secondAttribute="trailing" constant="4" id="oDx-GQ-hPm"/>
                         <constraint firstItem="IRp-Qi-VI1" firstAttribute="leading" secondItem="9pK-OW-p70" secondAttribute="leading" constant="28" id="oRg-po-I2G"/>
+                        <constraint firstAttribute="bottom" secondItem="E0q-Yp-kOB" secondAttribute="bottom" constant="55" id="qnu-7q-mTE"/>
                         <constraint firstAttribute="trailing" secondItem="8Ag-Xp-InZ" secondAttribute="trailing" constant="28" id="v6k-fx-Sof"/>
+                        <constraint firstAttribute="trailing" secondItem="E0q-Yp-kOB" secondAttribute="trailing" constant="50" id="vgR-NB-OqY"/>
                         <constraint firstAttribute="trailing" secondItem="FJV-Do-5Ms" secondAttribute="trailing" constant="28" id="yV0-lM-oiY"/>
                     </constraints>
                 </view>
@@ -124,7 +151,6 @@
                 <constraint firstItem="9pK-OW-p70" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Lfs-dI-KhX"/>
                 <constraint firstItem="9pK-OW-p70" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="XRT-Wd-LVz"/>
                 <constraint firstItem="9pK-OW-p70" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="a0n-HX-5uI"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bzq-Oc-oLZ" secondAttribute="bottom" constant="20" id="ebx-bW-oMa"/>
                 <constraint firstAttribute="bottom" secondItem="9pK-OW-p70" secondAttribute="bottom" id="xR8-1I-j5U"/>
             </constraints>
             <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>

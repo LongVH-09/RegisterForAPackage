@@ -47,7 +47,7 @@ class RegisterViewController: UIViewController {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             if self.view.frame.origin.y == 0 {
                 btnNextBottomConstraint.constant = keyboardSize.height
-            }
+            } 
         }
     }
     
@@ -55,9 +55,13 @@ class RegisterViewController: UIViewController {
         btnNextBottomConstraint.constant = 20
     }
     
-    @IBAction func process(_ sender: Any) {
+    @IBAction func processNextAction(_ sender: Any) {
         let vc = RegisterPackageViewController()
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func processLoginVC(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
 }
 extension RegisterViewController: UITextFieldDelegate {
